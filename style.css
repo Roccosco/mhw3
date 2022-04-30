@@ -1,0 +1,130 @@
+.question-name {
+    background-image: url('./images/background.jpg');
+    /* background-size:100%; */
+}
+
+.choice-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 20px;
+}
+
+.choice-grid div {
+    display: flex;
+    flex-direction: column;
+    width: calc(32.5% - 20px);
+
+    padding: 10px;
+    margin-top: 20px;
+
+    background-color: #f4f4f4;
+    border: 1px solid #dcdcdc;
+}
+
+div img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+div.selezionato {
+    background-color: #cfe3ff;
+}
+
+.nonSelezionato {
+    opacity: 0.6;
+}
+
+.risposta {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.risposta h1 {
+    margin: 0;
+}
+
+.risposta p {
+    margin: 18px 0;
+}
+
+.risposta button {
+    height: 50px;
+    width: 100%;
+    background-color: #cecece;
+}
+
+.risposta button:hover{
+    background-color: #e0e0e0;
+}
+
+.hidden {
+    display: none;
+}
+
+form{
+    margin: auto;
+    width: fit-content;
+}
+
+#nomeCitta, #infoCitta, .titleSegmenti {
+    text-align: center;
+}
+
+div.segmenti{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: calc((100% - 780px)/2);
+
+    margin: 20px;
+}
+
+.segmento, .lissegmento{
+    margin: auto;
+    width: fit-content;
+}
+
+.imgsegmento{
+    display: block;
+    margin: auto;
+}
+/* 
+.listsegmento{
+    margin: auto;
+    text-align: center;
+} */
+
+@media (max-width: 1000px) {
+    div.segmenti{
+        position: relative;
+        width: 700px;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    article {
+        width: 95%;
+    }
+
+    header div {
+        display: none;
+    }
+
+    div.segmenti{
+        width: 95%;
+    }
+}
+
+@media (max-width: 500px) {
+    .choice-grid div {
+        width: calc(49% - 20px);
+    }
+}

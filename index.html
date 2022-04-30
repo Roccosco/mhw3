@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1">
+
+    <title>Che tipo di ciclista sei?</title>
+    <link href="https://fonts.googleapis.com/css?family=Pangolin:400,700|Proxima+Nova" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="provided-style.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="constants.js" defer="true"></script>
+    <script src="script.js" defer="true"></script>
+
+  </head>
+
+  <body>
+    <article>
+      <header>
+          <h1>Web Programming</h1>
+          <div>
+            <span>M</span>
+            <span>H</span>
+            <span>W</span>
+            <span>3</span>
+          </div>
+      </header>
+      <h1>Che tipo di ciclista sei?</h1>
+
+      <section class="question-name">
+        <h1>Scegli un ciclista:</h1>
+      </section>
+
+      <section class="choice-grid">
+        <div data-choice-id="scalatore" data-question-id="one">
+          <img src="images/1_1.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="velocista" data-question-id="one">
+          <img src="./images/1_2.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="passcalatore" data-question-id="one">
+          <img   src="./images/1_3.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="pasvelocista" data-question-id="one">
+          <img   src="./images/1_4.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="cronoman" data-question-id="one">
+          <img   src="./images/1_5.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="ciclocrossman" data-question-id="one">
+          <img   src="./images/1_6.png"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="gregario" data-question-id="one">
+          <img   src="./images/1_7.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="succhiaruote" data-question-id="one">
+          <img   src="./images/1_8.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="merckx" data-question-id="one">
+          <img   src="./images/1_9.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+      </section>
+
+      <div id="info" class="hidden">
+        <h2>Informazioni su: <span div id="infoNome"></span></h2>
+        <div id="infoWiki">
+
+        </div>
+      </div>
+
+      <section class="question-name">
+        <h1>Scegli una bici:</h1>
+      </section>
+
+      <section class="choice-grid">
+        <div data-choice-id="scalatore" data-question-id="two">
+          <img   src="images/2_1.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="velocista" data-question-id="two">
+          <img   src="./images/2_2.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="passcalatore" data-question-id="two">
+          <img   src="./images/2_3.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="pasvelocista" data-question-id="two">
+          <img   src="./images/2_4.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="cronoman" data-question-id="two">
+          <img   src="./images/2_5.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="ciclocrossman" data-question-id="two">
+          <img   src="./images/2_6.webp"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="gregario" data-question-id="two">
+          <img   src="./images/2_7.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="succhiaruote" data-question-id="two">
+          <img   src="./images/2_8.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="merckx" data-question-id="two">
+          <img   src="./images/2_9.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+      </section>
+
+      <section class="question-name">
+        <h1>Scegli un casco:</h1>
+      </section>
+
+      <section class="choice-grid">
+        <div data-choice-id="scalatore" data-question-id="three">
+          <img   src="images/3_1.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="velocista" data-question-id="three">
+          <img   src="./images/3_2.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="passcalatore" data-question-id="three">
+          <img   src="./images/3_3.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="pasvelocista" data-question-id="three">
+          <img   src="./images/3_4.webp"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="cronoman" data-question-id="three">
+          <img   src="./images/3_5.webp"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="ciclocrossman" data-question-id="three">
+          <img   src="./images/3_6.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="gregario" data-question-id="three">
+          <img   src="./images/3_7.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="succhiaruote" data-question-id="three">
+          <img   src="./images/3_8.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+
+        <div data-choice-id="merckx" data-question-id="three">
+          <img   src="./images/3_9.jpg"/>
+          <img class="checkbox" src="images/unchecked.png"/>
+        </div>
+      </section>
+
+      <div class="risposta hidden" >
+        <h1></h1>
+        <p></p>
+        <button>Ricomincia il quiz</button>
+      </div>
+
+    </article>
+
+    <div class="segmenti">
+        <h2 class="titleSegmenti">Scopri i percorsi della tua zona</h2>
+        <p>Strava è un social network di atleti che permette di creare e visualizzare segmenti praticabili tra le strade di tutti i paesi del mondo.<br>Cerca un segmento nella città che vuoi.</p>
+        <form>
+          <input type="text" id="citta" placeholder="Nome città">
+          <input type="submit" value="Cerca" id="cerca">
+        </form>
+
+        <h2 id="nomeCitta"></h2>
+
+        <p id="infoCitta"></p>
+
+        <div>
+         
+        </div>
+    </div>
+  </body>
+</html>
